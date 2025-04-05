@@ -304,7 +304,7 @@ export async function sendSms(){
 export async function sendEmail(){
     try{
         const mailOptions = {
-            from: "support@profinix.tech", // Use your verified sender email
+            from: "support@profinix.tech",
             to: "rajajanarthanan@gmail.com",
             subject: "",
             html: otpEmailHtmlBody("")
@@ -321,10 +321,10 @@ export async function sendEmail(){
 export const transporter = nodemailer.createTransport({
     host: "us2.smtp.mailhostbox.com",
     port: 587,
-    secure: false, // true for port 465, false for other ports
+    secure: false,
     auth: {
       user: "support@profinix.tech",
-      pass: "Profinix@777",
+      pass: "ThePasswordIsSecret",
     }
   });
 
